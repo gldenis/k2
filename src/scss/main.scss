@@ -1,0 +1,43 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/title";
+@import "./components/buttons";
+@import "./components/burger";
+@import "./components/swiper";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/services";
+@import "./components/platforms";
+@import "./components/road";
+@import "./components/team";
+@import "./components/reasons";
+@import "./components/reviews";
+@import "./components/movies";
+@import "./components/last-posts";
+@import "./components/youtube";
+@import "./components/footer";
+
+// тестовые стили, удалите их
+.page__body {
+  display: flex;
+  height: var(--vh);
+}
+.site-container {
+  width: 100%;
+  height: var(--vh);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.main {
+  flex-grow: 1;
+  width: 100%;
+}

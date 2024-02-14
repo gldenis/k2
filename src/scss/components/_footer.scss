@@ -1,0 +1,135 @@
+.footer {
+  background: url("../../img/footer-bg.svg");
+  height: 628px;
+  padding-bottom: 80px;
+
+  &__container {
+    padding: 0 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  &__bottom {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__slogan {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+    width: max-content;
+  }
+
+  &__btn {
+    width: 245px;
+    margin-top: 16px;
+  }
+
+  &__copyright {
+    margin-top: auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #94AAB9;
+  }
+
+  &__payment {
+    text-align: right;
+    margin-top: auto;
+  }
+}
+
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+  }
+}
+
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &__item {
+
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #94AAB9;
+  }
+
+  &__value {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+  }
+}
+
+
+.footer-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: auto;
+
+  &__link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--white);
+  }
+}
+
+.footer-socials {
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #94AAB9;
+    text-align: right;
+  }
+
+  &__list {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  &__item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #94AAB9;
+  }
+}

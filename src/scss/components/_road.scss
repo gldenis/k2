@@ -1,0 +1,99 @@
+.road {
+  &__title {
+    text-shadow: 0 4px 50px rgba(0, 63, 106, 0.3);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 64px;
+    text-transform: uppercase;
+    span {
+      color: var(--second-text-color);
+
+    }
+  }
+
+  &__content {
+    background: url("../../img/road.png") center center / cover no-repeat;
+    height: 1075px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+
+    &--1 {
+      bottom: 50px;
+      left: calc(50% + 187px)
+    }
+
+    &--2 {
+      bottom: 240px;
+      left: calc(50% + 160px)
+    }
+
+    &--3 {
+      bottom: 430px;
+      left: calc(50% + 220px)
+    }
+
+    &--4 {
+      bottom: 328px;
+      flex-direction: row-reverse;
+      right: calc(50% - 92px)
+    }
+
+    &--5 {
+      bottom: 530px;
+      flex-direction: row-reverse;
+      right: calc(50% - 25px)
+    }
+
+    &--6 {
+      bottom: 710px;
+      flex-direction: row-reverse;
+      right: calc(50% + 65px)
+    }
+
+    &--7 {
+      bottom: 690px;
+      left: calc(50% + 93px)
+    }
+
+    &--8 {
+      bottom: 828px;
+      left: calc(50% + 47px)
+    }
+
+    &--9 {
+      bottom: 980px;
+      flex-direction: row-reverse;
+      right: calc(50% - 35px)
+    }
+  }
+
+  &__icon-wrapper {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: var(--button-color);
+  }
+
+  &__step-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--white);
+    background: var(--second-text-color);
+    border-radius: 10px;
+    padding: 12px 26px;
+  }
+}

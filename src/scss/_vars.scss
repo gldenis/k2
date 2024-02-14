@@ -1,0 +1,30 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  --white: #fff;
+  --button-color: #f35609;
+  --button-color-hover: #fd7835;
+  --background-color: #f5f5f7;
+  --body-text-color: #444;
+
+  --main-text-colot: #000;
+  --second-text-color: #005c9a;
+}
+:root {
+  --font-family: "Gilroy", sans-serif;
+  --second-family: "Manrope", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Bebas Neue", sans-serif;
+
+  // base
+  --content-width: 1880px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+}
+
+:root {
+
+}

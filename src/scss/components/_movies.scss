@@ -1,0 +1,50 @@
+.movies {
+
+
+  &__list {
+    position: relative;
+  }
+
+  &__pagination {
+    position: static;
+    margin-top: 50px;
+  }
+
+  &__btn {
+    margin-top: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.movies-slider {
+  &__btn-prev {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 60px;
+    transform: translateY(-50%);
+  }
+
+  &__btn-next {
+    position: absolute;
+    top: calc(50% - 30px);
+    right: 60px;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    width: 454px;
+    height: 741px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(245, 245, 247, 0) 0%, rgba(245, 245, 247, 0.01) 6.67%, rgba(245, 245, 247, 0.04) 13.33%, rgba(245, 245, 247, 0.08) 20%, rgba(245, 245, 247, 0.15) 26.67%, rgba(245, 245, 247, 0.23) 33.33%, rgba(245, 245, 247, 0.33) 40%, rgba(245, 245, 247, 0.44) 46.67%, rgba(245, 245, 247, 0.56) 53.33%, rgba(245, 245, 247, 0.67) 60%, rgba(245, 245, 247, 0.77) 66.67%, rgba(245, 245, 247, 0.85) 73.33%, rgba(245, 245, 247, 0.92) 80%, rgba(245, 245, 247, 0.96) 86.67%, rgba(245, 245, 247, 0.99) 93.33%, #f5f5f7 100%);
+  }
+}

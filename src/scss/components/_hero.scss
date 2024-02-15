@@ -3,16 +3,18 @@
   background: var(--background-color);
   background-clip: content-box;
   overflow: hidden;
+  height: calc(100vh - 104px);
 
   &__container {
     display: flex;
     max-width: 1600px;
     margin: auto;
+    height: 100%;
+    align-items: center;
   }
 
   &__title {
     text-align: left;
-    margin-top: 50px;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 

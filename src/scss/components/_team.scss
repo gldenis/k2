@@ -25,7 +25,7 @@
   gap: 40px;
   justify-content: center;
   width: max-content;
-  margin: 0 auto ;
+  margin: 0;
 
   &__image {
     width: 454px;
@@ -61,11 +61,14 @@
 }
 
 .team-slider {
+  margin-left: 455px;
+
   &__btn-prev {
     position: absolute;
     top: 50%;
     left: 60px;
     transform: translateY(-50%);
+    z-index: 1;
   }
 
   &__btn-next {
@@ -73,5 +76,18 @@
     top: 50%;
     right: 60px;
     transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: '';
+    width: 296px;
+    height: 454px;
+    background: linear-gradient(90deg, rgba(245, 245, 247, 0) 0%, rgba(245, 245, 247, 0.01) 6.67%, rgba(245, 245, 247, 0.04) 13.33%, rgba(245, 245, 247, 0.08) 20%, rgba(245, 245, 247, 0.15) 26.67%, rgba(245, 245, 247, 0.23) 33.33%, rgba(245, 245, 247, 0.33) 40%, rgba(245, 245, 247, 0.44) 46.67%, rgba(245, 245, 247, 0.56) 53.33%, rgba(245, 245, 247, 0.67) 60%, rgba(245, 245, 247, 0.77) 66.67%, rgba(245, 245, 247, 0.85) 73.33%, rgba(245, 245, 247, 0.92) 80%, rgba(245, 245, 247, 0.96) 86.67%, rgba(245, 245, 247, 0.99) 93.33%, #f5f5f7 100%);
+    z-index: 1;
   }
 }

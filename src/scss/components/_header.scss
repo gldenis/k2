@@ -29,6 +29,7 @@
     color: var(--white);
     padding: 10px 24px;
     height: 48px;
+    position: relative;
   }
 
   &__case {
@@ -52,6 +53,10 @@
     line-height: 130%;
     color: var(--second-text-color);
   }
+}
+
+.header-logo {
+  margin-right: -225px;
 }
 
 .lang-switcher {
@@ -95,4 +100,26 @@
 
   &__icon {
   }
+}
+
+
+.badge {
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  background: var(--second-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--white);
+}
+
+.header__badge {
+  position: absolute;
+  right: 12px;
+  top: -7px;
 }

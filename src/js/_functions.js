@@ -70,10 +70,27 @@ servicesSliders.forEach(sliderEl => {
   });
 })
 
+const clientsSliderEl = document.querySelector('.clients-slider')
+
+const clientsSlider = new Swiper(clientsSliderEl, {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: clientsSliderEl.closest('.clients__list').querySelector('.swiper-pagination')
+  },
+  navigation: {
+    prevEl: clientsSliderEl.closest('.clients__list').querySelector('.clients-slider__btn-prev'),
+    nextEl: clientsSliderEl.closest('.clients__list').querySelector('.clients-slider__btn-next'),
+  }
+});
+
+
+
 const teamSliderEl = document.querySelector('.team-slider')
 
 const teamSlider = new Swiper(teamSliderEl, {
-  slidesPerView: 1,
+  slidesPerView: 1.275,
+  spaceBetween: 20,
   loop: true,
   pagination: {
     el: teamSliderEl.closest('.team__list').querySelector('.swiper-pagination')
@@ -122,7 +139,6 @@ const lastPostsEl = document.querySelector('.last-posts-slider')
 const lastPostsSlider = new Swiper(lastPostsEl, {
   slidesPerView: 3.65,
   spaceBetween: 20,
-  slidesPerGroup: 3,
   grid: {
     fill: 'column',
     rows: 2,

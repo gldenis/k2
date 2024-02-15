@@ -17,8 +17,10 @@
 
   &__bottom {
     height: 100%;
-    display: flex;
     justify-content: space-between;
+    grid-template-columns: 1.5fr 1.5fr 2.25fr 1fr;
+    display: grid;
+    gap: 100px;
   }
 
   &-col {
@@ -28,7 +30,7 @@
   }
 
   &__slogan {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
     line-height: 150%;
     color: var(--white);
